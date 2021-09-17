@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Buổi thực hành 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn,
+    .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+    /* Header/logo Title */
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      /* IE10 */
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      width: 100%;
+    }
+
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Tiêu đề</h1>
+    <p>Buổi thực hành 1.</p>
+  </div>
+
+  <div class="navbar">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" class="right">Link</a>
+  </div>
+
+  <div class="row">
+    <div class="side">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29790.424209586043!2d105.65491662985933!3d21.040566003430623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313456bb3ed1b3db%3A0x97e91b50319de087!2zWcOqbiBT4bufLCBIb8OgaSDEkOG7qWMsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1631865384286!5m2!1svi!2s" width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOnlineStore&tabs=timeline&width=200&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="200" height="200" style="border:none;overflow:hidden; margin-top: 20px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+    <div class="main">
+      <form action="/action_page.php" style="border:1px solid #ccc">
+        <div class="container">
+          <h1>Đăng ký thông tin</h1>
+          <p>Vui lòng điền đầy đủ thông tin bên dưới.</p>
+          <hr>
+
+          <label for="email"><b>User name</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+
+          <label for="email"><b>Ngày sinh</b></label>
+          <div style="display: flexbox; padding: 15px;">
+            <label for="date">Ngày: </label>
+            <select name="date" id="date">
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+            </select>
+            <label for="month">Tháng: </label>
+            <select name="month" id="month">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <label for="year">Năm: </label>
+            <select name="year" id="year">
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+            </select>
+          </div>
+
+          <label for="email"><b>Giới tính</b></label>
+          <div style="padding: 15px;">
+            <label for="nam">Nam:</label>
+            <input type="radio" id="nam" name="nam" value="nam">
+            <label for="nu">Nữ:</label>
+            <input type="radio" id="nu" name="nu" value="nu">
+          </div>
+          <label for="email"><b>Tỉnh/Thành phố</b></label>
+          <div style="padding: 15px;">
+            <select name="tinh" id="tinh">
+              <option value="2000">Hà Nội</option>
+              <option value="2001">Hồ Chí Minh</option>
+            </select>
+          </div>
+
+          <label for="email"><b>Sở thích</b></label>
+          <div style="padding: 15px;">
+            <input type="checkbox" id="sport" name="sport" value="sport">
+            <label for="sport"> Thể thao</label>
+            <input type="checkbox" id="music" name="music" value="music">
+            <label for="music"> Nghe nhạc</label>
+            <input type="checkbox" id="travel" name="travel" value="travel">
+            <label for="travel"> Du lịch</label>
+          </div>
+
+          <label for="w3review"><b>Mô tả bản thân</b></label>
+          <div style="padding: 15px;">
+            <textarea id="w3review" name="w3review" rows="4" cols="50" style="width: 100%;">
+ 
+            </textarea>
+          </div>
+
+          <div class="clearfix">
+            <button type="reset" class="cancelbtn">Reset</button>
+            <button type="button" class="signupbtn" onclick="alert('Đk thành công')">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
