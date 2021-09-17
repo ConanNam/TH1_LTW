@@ -199,8 +199,14 @@
 
   <div class="row">
     <div class="side">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29790.424209586043!2d105.65491662985933!3d21.040566003430623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313456bb3ed1b3db%3A0x97e91b50319de087!2zWcOqbiBT4bufLCBIb8OgaSDEkOG7qWMsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1631865384286!5m2!1svi!2s" width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOnlineStore&tabs=timeline&width=200&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="200" height="200" style="border:none;overflow:hidden; margin-top: 20px;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29790.424209586043!2d105.65491662985933!3d21.040566003430623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313456bb3ed1b3db%3A0x97e91b50319de087!2zWcOqbiBT4bufLCBIb8OgaSDEkOG7qWMsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1631865384286!5m2!1svi!2s"
+        width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOnlineStore&tabs=timeline&width=200&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="200" height="200" style="border:none;overflow:hidden; margin-top: 20px;" scrolling="no" frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </div>
     <div class="main">
       <form action="/action_page.php" style="border:1px solid #ccc">
@@ -272,7 +278,7 @@
           <label for="w3review"><b>Mô tả bản thân</b></label>
           <div style="padding: 15px;">
             <textarea id="w3review" name="w3review" rows="4" cols="50" style="width: 100%;">
- 
+
             </textarea>
           </div>
 
@@ -289,6 +295,36 @@
       <h2>Footer</h2>
     </div>
 
+
+
 </body>
+
+<!-- Messenger Plugin chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "102476898857480");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function () {
+    FB.init({
+      xfbml: true,
+      version: 'v12.0'
+    });
+  };
+
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </html>
